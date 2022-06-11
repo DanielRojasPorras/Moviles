@@ -143,10 +143,10 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                 mMap.addMarker(MarkerOptions().position(punto).title("Marker in Costa Rica"))
 
                 if(PolyUtil.containsLocation(localizacion.latitude, localizacion.longitude, getPolygon(layer)!!.outerBoundaryCoordinates, false)){
-                    Toast.makeText(p0,"Dentro de CR",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(p0,"Dentro de Punto",Toast.LENGTH_SHORT).show()
                 }
                 else{
-                    Toast.makeText(p0,"Fuera de CR ",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(p0,"Fuera de Punto",Toast.LENGTH_SHORT).show()
                 }
             }
         }
